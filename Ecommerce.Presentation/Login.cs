@@ -62,6 +62,7 @@ namespace Ecommerce.Presentation
                 UserDashBoard userDashBoard = new UserDashBoard();
                 userDashBoard.Show();
               
+                MessageBox.Show("Login User Done");
             }
             else if (user.GetAdminRoleLogin(tb_Email.Text, tb_Password.Text))
             {
