@@ -30,6 +30,7 @@ namespace Ecommerce.BussinessLogic
             DataTable dt = context.ExecuteQuery(query);
             return dt.Rows.Count > 0; 
         }
+
         public int AddUser(string userName, string Email, string Password, int Age, string Address)
         {
             string query = $"insert into Users(UserName,Email,Password,Age,Address)values('{userName}','{Email}','{Password}',{Age},'{Address}')";
