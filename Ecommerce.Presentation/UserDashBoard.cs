@@ -20,6 +20,9 @@ namespace Ecommerce.Presentation
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+            this.Close();
+            Login login = new Login();
+            login.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
