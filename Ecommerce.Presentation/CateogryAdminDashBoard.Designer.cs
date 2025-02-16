@@ -213,6 +213,7 @@
             pb_logOut.SizeMode = PictureBoxSizeMode.Zoom;
             pb_logOut.TabIndex = 37;
             pb_logOut.TabStop = false;
+            pb_logOut.Click += pb_logOut_Click;
             // 
             // lb_AdminCategoryDashboard
             // 
@@ -244,6 +245,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(225, 241, 251);
             ClientSize = new Size(827, 620);
+            ControlBox = false;
             Controls.Add(lb_RefreshData);
             Controls.Add(lb_closeDashBoard);
             Controls.Add(tb_categoryName);
@@ -259,6 +261,7 @@
             Controls.Add(pb_logOut);
             Controls.Add(lb_AdminCategoryDashboard);
             Controls.Add(profileLinkBtn);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "CateogryAdminDashBoard";
             Text = "CateogryAdminDashBoard";
             Load += CateogryAdminDashBoard_Load;

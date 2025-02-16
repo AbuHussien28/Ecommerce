@@ -119,5 +119,12 @@ namespace Ecommerce.Presentation
         {
             GetData();
         }
+
+        private void pb_logOut_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }

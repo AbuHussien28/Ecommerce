@@ -177,6 +177,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 241, 250);
             ClientSize = new Size(805, 724);
+            ControlBox = false;
             Controls.Add(lb_UserDashBorad);
             Controls.Add(lb_Products);
             Controls.Add(pictureBox2);
@@ -188,6 +189,7 @@
             Controls.Add(lb_UserDashboard);
             Controls.Add(dgview_FavProduct);
             Controls.Add(dgview_AllProducts);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "UserDashBoard";
             Text = "UserDashBoard";
             Load += UserDashBoard_Load;

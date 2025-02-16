@@ -105,31 +105,46 @@ namespace Ecommerce.Presentation
             string oldPasswordWrite = tb_OldPassword.Text;
             string newPassword = tb_NewPassword.Text;
             string confrimPassword = tb_ConfirmPassword.Text;
-            if (oldPasswordWrite == string.Empty)
-                MessageBox.Show("Please Enter Old Password");
-            if (oldPassword == oldPasswordWrite)
+            if (string.IsNullOrWhiteSpace(oldPasswordWrite))
             {
-                if (newPassword == confrimPassword)
-                {
-                    int affectedRow = user.ChangePassword(oldPassword, newPassword);
-                    if (affectedRow > 0)
-                    {
-                        MessageBox.Show("Change Password Done");
-                        LoadUserData();
-                        panelShowData.Visible = true;
-                        panelEditProfile.Visible = false;
-                        panelChangePassword.Visible = false;
-                    }
-                    else
-                        MessageBox.Show("Error!");
-                }
-                else
-                {
-                    MessageBox.Show("New Password and Confirm Password Not Match");
-                }
+                MessageBox.Show("Please Enter Old Password", "Waring", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (oldPasswordWrite != oldPassword)
+            {
+                MessageBox.Show("old Password wrong", "Error!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(newPassword))
+            {
+                MessageBox.Show("Please Enter New Password", "Waring", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(confrimPassword))
+            {
+                MessageBox.Show("Please Enter Confirm Password", "Waring", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (newPassword != confrimPassword)
+            {
+                MessageBox.Show("New Password and Confirm Password Not Match", "Error!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // تحديث كلمة المرور
+            int affectedRow = user.ChangePassword(oldPassword, newPassword);
+            if (affectedRow > 0)
+            {
+                MessageBox.Show("Changed Password Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadUserData();
+                panelShowData.Visible = true;
+                panelEditProfile.Visible = false;
+                panelChangePassword.Visible = false;
             }
             else
-                MessageBox.Show("old Password wrong ");
+            {
+                MessageBox.Show("Error hapen during running", "Error!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
