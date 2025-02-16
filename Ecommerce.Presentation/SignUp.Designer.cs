@@ -126,7 +126,7 @@
             tb_Address.Location = new Point(442, 406);
             tb_Address.Name = "tb_Address";
             tb_Address.Size = new Size(295, 34);
-            tb_Address.TabIndex = 32;
+            tb_Address.TabIndex = 33;
             // 
             // lb_Address
             // 
@@ -180,7 +180,7 @@
             numberic_Age.Location = new Point(442, 323);
             numberic_Age.Name = "numberic_Age";
             numberic_Age.Size = new Size(295, 34);
-            numberic_Age.TabIndex = 33;
+            numberic_Age.TabIndex = 32;
             // 
             // btn_SignUp
             // 

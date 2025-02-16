@@ -86,7 +86,7 @@ namespace Ecommerce.Presentation
                 LoadUserData();
             }
             else
-            MessageBox.Show("Error!");
+                MessageBox.Show("Error!");
             panelShowData.Visible = true;
             panelEditProfile.Visible = false;
             panelChangePassword.Visible = false;
@@ -102,10 +102,10 @@ namespace Ecommerce.Presentation
 
             DataTable dt = user.GetDataForPrfoile(userName);
             string oldPassword = dt.Rows[0]["Password"].ToString();
-            string oldPasswordWrite=tb_OldPassword.Text;
+            string oldPasswordWrite = tb_OldPassword.Text;
             string newPassword = tb_NewPassword.Text;
             string confrimPassword = tb_ConfirmPassword.Text;
-            if(oldPasswordWrite==string.Empty)
+            if (oldPasswordWrite == string.Empty)
                 MessageBox.Show("Please Enter Old Password");
             if (oldPassword == oldPasswordWrite)
             {
@@ -131,6 +131,36 @@ namespace Ecommerce.Presentation
             else
                 MessageBox.Show("old Password wrong ");
 
+        }
+
+        private void lb_back_Click(object sender, EventArgs e)
+        {
+            this.Owner?.Show();
+            this.Hide();
+        }
+
+        private void chb_ShowOldPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chb_ShowOldPassword.Checked)
+                tb_OldPassword.UseSystemPasswordChar = false;
+            else
+                tb_OldPassword.UseSystemPasswordChar = true;
+        }
+
+        private void ChB_ShowNewPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChB_ShowNewPassword.Checked)
+                tb_NewPassword.UseSystemPasswordChar = false;
+            else
+                tb_NewPassword.UseSystemPasswordChar = true;
+        }
+
+        private void ChB_ShowConfirmPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChB_ShowConfirmPassword.Checked)
+                tb_ConfirmPassword.UseSystemPasswordChar = false;
+            else
+                tb_ConfirmPassword.UseSystemPasswordChar = true;
         }
     }
 }

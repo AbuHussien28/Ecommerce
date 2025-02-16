@@ -132,8 +132,9 @@ namespace Ecommerce.Presentation
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
             ProfileScreen profile = new ProfileScreen(userName);
+            profile.Owner = this;
+            this.Hide();
             profile.Show();
         }
     }
