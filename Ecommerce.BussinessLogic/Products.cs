@@ -28,5 +28,23 @@ namespace Ecommerce.BussinessLogic
             DataTable dt = context.ExecuteQuery(query);
             return dt;
         }
+        public int AddProduct(string ProductName, int Price, int CategoryId)
+        {
+            string query = $"insert into Products(ProductName,Price,CategoryId)values('{ProductName}',{Price},{CategoryId})";
+            int rowsAffected = context.ExecuteNonQuery(query);
+            return rowsAffected;
+        }
+        public int EditProduct(int ProductId, string ProductName, int Price, int CategoryId)
+        {
+            string query = $"update Products set ProductName='{ProductName}',Price={Price},CategoryId={CategoryId} where ProductId={ProductId}";
+            int rowsAffected = context.ExecuteNonQuery(query);
+            return rowsAffected;
+        }
+        public int DeleteProduct(int ProductId) 
+        {
+            string query = $"delete from Products where ProductId={ProductId}";
+            int rowsAffected = context.ExecuteNonQuery(query);
+            return rowsAffected;
+        }
     }
 }

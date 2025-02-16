@@ -127,7 +127,15 @@ namespace Ecommerce.Presentation
 
         private void lb_UserDashBorad_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ProfileScreen profile = new ProfileScreen(userName);
+            profile.Owner = this;
+            this.Hide();
+            profile.Show();
         }
     }
 }
