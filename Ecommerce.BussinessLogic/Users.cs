@@ -57,5 +57,29 @@ namespace Ecommerce.BussinessLogic
             int rowsAffected = context.ExecuteNonQuery(query);
             return rowsAffected;
         }
+        public DataTable GetAllUser() 
+        {
+            string query = $"select UserId,UserName,Email,Password,Age,Address,Role from Users";
+            DataTable dt = context.ExecuteQuery(query);
+            return dt;
+        }
+        public int AddUser(string userName, string Email, string Password, int Age, string Address, string Role)
+        {
+            string query = $"insert into Users(UserName,Email,Password,Age,Address,Role)values('{userName}','{Email}','{Password}',{Age},'{Address}','{Role}')";
+            int rowsAffected = context.ExecuteNonQuery(query);
+            return rowsAffected;
+        }
+        public int EditUser(int UserId ,string userName, string Email, string Password, int Age, string Address, string Role)
+        {
+            string query = $"update Users set UserName='{userName}', Email='{Email}',Password='{Password}',Age={Age},Address='{Address}',Role='{Role}' where UserId='{UserId}'";
+            int rowsAffected = context.ExecuteNonQuery(query);
+            return rowsAffected;
+        }
+        public int RemoveUser(int UserId)
+        {
+            string query = $"delete from Users where UserId={UserId}";
+            int rowsAffected = context.ExecuteNonQuery(query);
+            return rowsAffected;
+        }
     }
 }

@@ -57,6 +57,9 @@
             label3 = new Label();
             label4 = new Label();
             panelChangePassword = new Panel();
+            ChB_ShowConfirmPassword = new CheckBox();
+            ChB_ShowNewPassword = new CheckBox();
+            chb_ShowOldPassword = new CheckBox();
             lb_confirmPassword = new Label();
             lb_newPassword = new Label();
             lb_oldPassword = new Label();
@@ -68,6 +71,7 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
+            lb_back = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelShowData.SuspendLayout();
@@ -255,7 +259,7 @@
             panelEditProfile.Controls.Add(label2);
             panelEditProfile.Controls.Add(label3);
             panelEditProfile.Controls.Add(label4);
-            panelEditProfile.Location = new Point(352, 90);
+            panelEditProfile.Location = new Point(340, 93);
             panelEditProfile.Name = "panelEditProfile";
             panelEditProfile.Size = new Size(477, 259);
             panelEditProfile.TabIndex = 28;
@@ -379,6 +383,9 @@
             // 
             // panelChangePassword
             // 
+            panelChangePassword.Controls.Add(ChB_ShowConfirmPassword);
+            panelChangePassword.Controls.Add(ChB_ShowNewPassword);
+            panelChangePassword.Controls.Add(chb_ShowOldPassword);
             panelChangePassword.Controls.Add(lb_confirmPassword);
             panelChangePassword.Controls.Add(lb_newPassword);
             panelChangePassword.Controls.Add(lb_oldPassword);
@@ -396,12 +403,45 @@
             panelChangePassword.TabIndex = 0;
             panelChangePassword.Visible = false;
             // 
+            // ChB_ShowConfirmPassword
+            // 
+            ChB_ShowConfirmPassword.AutoSize = true;
+            ChB_ShowConfirmPassword.Location = new Point(325, 180);
+            ChB_ShowConfirmPassword.Name = "ChB_ShowConfirmPassword";
+            ChB_ShowConfirmPassword.Size = new Size(108, 19);
+            ChB_ShowConfirmPassword.TabIndex = 34;
+            ChB_ShowConfirmPassword.Text = "Show Password";
+            ChB_ShowConfirmPassword.UseVisualStyleBackColor = true;
+            ChB_ShowConfirmPassword.CheckedChanged += ChB_ShowConfirmPassword_CheckedChanged;
+            // 
+            // ChB_ShowNewPassword
+            // 
+            ChB_ShowNewPassword.AutoSize = true;
+            ChB_ShowNewPassword.Location = new Point(325, 118);
+            ChB_ShowNewPassword.Name = "ChB_ShowNewPassword";
+            ChB_ShowNewPassword.Size = new Size(108, 19);
+            ChB_ShowNewPassword.TabIndex = 33;
+            ChB_ShowNewPassword.Text = "Show Password";
+            ChB_ShowNewPassword.UseVisualStyleBackColor = true;
+            ChB_ShowNewPassword.CheckedChanged += ChB_ShowNewPassword_CheckedChanged;
+            // 
+            // chb_ShowOldPassword
+            // 
+            chb_ShowOldPassword.AutoSize = true;
+            chb_ShowOldPassword.Location = new Point(325, 57);
+            chb_ShowOldPassword.Name = "chb_ShowOldPassword";
+            chb_ShowOldPassword.Size = new Size(108, 19);
+            chb_ShowOldPassword.TabIndex = 32;
+            chb_ShowOldPassword.Text = "Show Password";
+            chb_ShowOldPassword.UseVisualStyleBackColor = true;
+            chb_ShowOldPassword.CheckedChanged += chb_ShowOldPassword_CheckedChanged;
+            // 
             // lb_confirmPassword
             // 
             lb_confirmPassword.AutoSize = true;
             lb_confirmPassword.Font = new Font("Segoe UI Black", 15F);
             lb_confirmPassword.ForeColor = Color.FromArgb(54, 75, 99);
-            lb_confirmPassword.Location = new Point(3, 134);
+            lb_confirmPassword.Location = new Point(3, 144);
             lb_confirmPassword.Name = "lb_confirmPassword";
             lb_confirmPassword.Size = new Size(196, 28);
             lb_confirmPassword.TabIndex = 31;
@@ -412,7 +452,7 @@
             lb_newPassword.AutoSize = true;
             lb_newPassword.Font = new Font("Segoe UI Black", 15F);
             lb_newPassword.ForeColor = Color.FromArgb(54, 75, 99);
-            lb_newPassword.Location = new Point(3, 75);
+            lb_newPassword.Location = new Point(3, 85);
             lb_newPassword.Name = "lb_newPassword";
             lb_newPassword.Size = new Size(158, 28);
             lb_newPassword.TabIndex = 30;
@@ -435,7 +475,7 @@
             lb_changePasswordBtn.BackColor = Color.FromArgb(219, 225, 227);
             lb_changePasswordBtn.Font = new Font("ae_Shado", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lb_changePasswordBtn.ForeColor = Color.FromArgb(54, 75, 99);
-            lb_changePasswordBtn.Location = new Point(182, 202);
+            lb_changePasswordBtn.Location = new Point(183, 230);
             lb_changePasswordBtn.Name = "lb_changePasswordBtn";
             lb_changePasswordBtn.Size = new Size(53, 23);
             lb_changePasswordBtn.TabIndex = 28;
@@ -447,20 +487,22 @@
             tb_ConfirmPassword.BackColor = Color.FromArgb(189, 204, 218);
             tb_ConfirmPassword.Font = new Font("Segoe UI", 12F);
             tb_ConfirmPassword.ForeColor = Color.FromArgb(54, 75, 99);
-            tb_ConfirmPassword.Location = new Point(211, 133);
+            tb_ConfirmPassword.Location = new Point(211, 143);
             tb_ConfirmPassword.Name = "tb_ConfirmPassword";
             tb_ConfirmPassword.Size = new Size(222, 29);
             tb_ConfirmPassword.TabIndex = 23;
+            tb_ConfirmPassword.UseSystemPasswordChar = true;
             // 
             // tb_NewPassword
             // 
             tb_NewPassword.BackColor = Color.FromArgb(189, 204, 218);
             tb_NewPassword.Font = new Font("Segoe UI", 12F);
             tb_NewPassword.ForeColor = Color.FromArgb(54, 75, 99);
-            tb_NewPassword.Location = new Point(211, 72);
+            tb_NewPassword.Location = new Point(211, 82);
             tb_NewPassword.Name = "tb_NewPassword";
             tb_NewPassword.Size = new Size(222, 29);
             tb_NewPassword.TabIndex = 21;
+            tb_NewPassword.UseSystemPasswordChar = true;
             // 
             // tb_OldPassword
             // 
@@ -471,6 +513,7 @@
             tb_OldPassword.Name = "tb_OldPassword";
             tb_OldPassword.Size = new Size(222, 29);
             tb_OldPassword.TabIndex = 20;
+            tb_OldPassword.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -487,7 +530,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Black", 12F);
             label7.ForeColor = Color.FromArgb(54, 75, 99);
-            label7.Location = new Point(20, 64);
+            label7.Location = new Point(20, 74);
             label7.Name = "label7";
             label7.Size = new Size(0, 21);
             label7.TabIndex = 15;
@@ -497,7 +540,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Black", 12F);
             label8.ForeColor = Color.FromArgb(54, 75, 99);
-            label8.Location = new Point(20, 118);
+            label8.Location = new Point(20, 128);
             label8.Name = "label8";
             label8.Size = new Size(0, 21);
             label8.TabIndex = 17;
@@ -507,10 +550,23 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Black", 12F);
             label9.ForeColor = Color.FromArgb(54, 75, 99);
-            label9.Location = new Point(20, 166);
+            label9.Location = new Point(20, 176);
             label9.Name = "label9";
             label9.Size = new Size(0, 21);
             label9.TabIndex = 19;
+            // 
+            // lb_back
+            // 
+            lb_back.AutoSize = true;
+            lb_back.BackColor = Color.FromArgb(231, 234, 240);
+            lb_back.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lb_back.ForeColor = Color.FromArgb(50, 74, 133);
+            lb_back.Location = new Point(351, 483);
+            lb_back.Name = "lb_back";
+            lb_back.Size = new Size(46, 21);
+            lb_back.TabIndex = 29;
+            lb_back.Text = "Back";
+            lb_back.Click += lb_back_Click;
             // 
             // ProfileScreen
             // 
@@ -518,6 +574,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(231, 234, 240);
             ClientSize = new Size(829, 513);
+            Controls.Add(lb_back);
             Controls.Add(panelEditProfile);
             Controls.Add(panelChangePassword);
             Controls.Add(panelShowData);
@@ -588,5 +645,9 @@
         private Label label11;
         private Label label12;
         private Label label13;
+        private Label lb_back;
+        private CheckBox ChB_ShowConfirmPassword;
+        private CheckBox ChB_ShowNewPassword;
+        private CheckBox chb_ShowOldPassword;
     }
 }
