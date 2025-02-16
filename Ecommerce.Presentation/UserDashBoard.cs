@@ -31,6 +31,7 @@ namespace Ecommerce.Presentation
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+
             this.Close();
             Login login = new Login();
             login.Show();
@@ -126,7 +127,14 @@ namespace Ecommerce.Presentation
 
         private void lb_UserDashBorad_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
             this.Close();
+            ProfileScreen profile = new ProfileScreen(userName);
+            profile.Show();
         }
     }
 }
