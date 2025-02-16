@@ -32,7 +32,7 @@ namespace Ecommerce.Presentation
 
         private void lb_closeSignUp_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void Btn_Clear_Click(object sender, EventArgs e)

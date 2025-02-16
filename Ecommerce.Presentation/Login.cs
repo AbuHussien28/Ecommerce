@@ -58,13 +58,15 @@ namespace Ecommerce.Presentation
         private void button1_Click(object sender, EventArgs e)
         {
             string userName = tb_UserName.Text;
+            if(userName == string.Empty)
+                MessageBox.Show("Please Enter The User Name ");
+            else if (tb_Password.Text == string.Empty)
+                MessageBox.Show("Please Enter The Password ");
             if (user.GetUserRoleLogin(userName, tb_Password.Text))
             {
                 this.Close();
                 UserDashBoard userDashBoard = new UserDashBoard(userName);
                 userDashBoard.Show();
-              
-                MessageBox.Show("Login User Done");
             }
             else if (user.GetAdminRoleLogin(tb_UserName.Text, tb_Password.Text))
             {

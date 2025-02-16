@@ -8,7 +8,7 @@ namespace Ecommerce.Presentation
         }
         private void lb_closeApp_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
