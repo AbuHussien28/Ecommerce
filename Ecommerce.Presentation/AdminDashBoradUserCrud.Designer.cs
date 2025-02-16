@@ -368,7 +368,8 @@
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 241, 250);
-            ClientSize = new Size(1143, 746);
+            ClientSize = new Size(1130, 746);
+            ControlBox = false;
             Controls.Add(lb_RefreshData);
             Controls.Add(lb_closeDashBoard);
             Controls.Add(cb_role);
@@ -395,6 +396,7 @@
             Controls.Add(lb_AdminUserDashboard);
             Controls.Add(profileLinkBtn);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4);
             Name = "AdminDashBoradUserCrud";
             Text = "AdminDashBoradUserCrud";

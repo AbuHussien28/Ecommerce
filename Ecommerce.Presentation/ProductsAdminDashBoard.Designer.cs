@@ -286,6 +286,7 @@
             tb_numbericPrice.BackColor = Color.FromArgb(174, 195, 214);
             tb_numbericPrice.ForeColor = Color.FromArgb(50, 74, 133);
             tb_numbericPrice.Location = new Point(445, 540);
+            tb_numbericPrice.Maximum = new decimal(new int[] { 6000000, 0, 0, 0 });
             tb_numbericPrice.Name = "tb_numbericPrice";
             tb_numbericPrice.Size = new Size(263, 23);
             tb_numbericPrice.TabIndex = 60;
@@ -296,6 +297,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 241, 250);
             ClientSize = new Size(799, 724);
+            ControlBox = false;
             Controls.Add(tb_numbericPrice);
             Controls.Add(lb_RefreshData);
             Controls.Add(lb_closeDashBoard);
@@ -315,6 +317,7 @@
             Controls.Add(pb_logOut);
             Controls.Add(lb_AdminProductDashboard);
             Controls.Add(profileLinkBtn);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "ProductsAdminDashBoard";
             Text = "ProductsAdminDashBoard";
             Load += ProductsAdminDashBoard_Load;
