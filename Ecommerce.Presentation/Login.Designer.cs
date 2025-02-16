@@ -35,7 +35,7 @@
             button1 = new Button();
             tb_Password = new TextBox();
             lb_password = new Label();
-            tb_Email = new TextBox();
+            tb_UserName = new TextBox();
             lb_Email = new Label();
             lb_welcomeLogin = new Label();
             pictureBox1 = new PictureBox();
@@ -127,15 +127,15 @@
             lb_password.TabIndex = 16;
             lb_password.Text = "Password";
             // 
-            // tb_Email
+            // tb_UserName
             // 
-            tb_Email.BackColor = Color.FromArgb(178, 197, 217);
-            tb_Email.Font = new Font("Segoe UI", 20F);
-            tb_Email.ForeColor = Color.White;
-            tb_Email.Location = new Point(478, 120);
-            tb_Email.Name = "tb_Email";
-            tb_Email.Size = new Size(286, 43);
-            tb_Email.TabIndex = 15;
+            tb_UserName.BackColor = Color.FromArgb(178, 197, 217);
+            tb_UserName.Font = new Font("Segoe UI", 20F);
+            tb_UserName.ForeColor = Color.White;
+            tb_UserName.Location = new Point(478, 120);
+            tb_UserName.Name = "tb_UserName";
+            tb_UserName.Size = new Size(286, 43);
+            tb_UserName.TabIndex = 15;
             // 
             // lb_Email
             // 
@@ -197,7 +197,7 @@
             Controls.Add(button1);
             Controls.Add(tb_Password);
             Controls.Add(lb_password);
-            Controls.Add(tb_Email);
+            Controls.Add(tb_UserName);
             Controls.Add(lb_Email);
             Controls.Add(lb_welcomeLogin);
             Controls.Add(pictureBox1);
@@ -219,7 +219,7 @@
         private Button button1;
         private TextBox tb_Password;
         private Label lb_password;
-        private TextBox tb_Email;
+        private TextBox tb_UserName;
         private Label lb_Email;
         private Label lb_welcomeLogin;
         private PictureBox pictureBox1;

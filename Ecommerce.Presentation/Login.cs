@@ -21,9 +21,10 @@ namespace Ecommerce.Presentation
             user = new Users(ConfigurationManager.ConnectionStrings["Ecommrce"].ConnectionString);
         }
 
+
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            tb_Email.Text = string.Empty;
+            tb_UserName.Text = string.Empty;
             tb_Password.Text = string.Empty;
         }
 
@@ -56,15 +57,16 @@ namespace Ecommerce.Presentation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (user.GetUserRoleLogin(tb_Email.Text, tb_Password.Text))
+            string userName = tb_UserName.Text;
+            if (user.GetUserRoleLogin(userName, tb_Password.Text))
             {
                 this.Close();
-                UserDashBoard userDashBoard = new UserDashBoard();
+                UserDashBoard userDashBoard = new UserDashBoard(userName);
                 userDashBoard.Show();
               
                 MessageBox.Show("Login User Done");
             }
-            else if (user.GetAdminRoleLogin(tb_Email.Text, tb_Password.Text))
+            else if (user.GetAdminRoleLogin(tb_UserName.Text, tb_Password.Text))
             {
                 MessageBox.Show("Login Admin Done");
             }
