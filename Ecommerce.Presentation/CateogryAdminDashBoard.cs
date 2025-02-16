@@ -114,5 +114,10 @@ namespace Ecommerce.Presentation
             productsAdminDashBoard.Show();
             this.Close();
         }
+
+        private void lb_RefreshData_Click(object sender, EventArgs e)
+        {
+            GetData();
+        }
     }
 }

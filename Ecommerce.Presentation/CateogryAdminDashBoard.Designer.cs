@@ -60,6 +60,7 @@
             lb_RefreshData.Size = new Size(76, 21);
             lb_RefreshData.TabIndex = 59;
             lb_RefreshData.Text = "Get Data";
+            lb_RefreshData.Click += lb_RefreshData_Click;
             // 
             // lb_closeDashBoard
             // 
