@@ -60,9 +60,9 @@
             lb_RefreshData.BackColor = Color.FromArgb(225, 241, 251);
             lb_RefreshData.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_RefreshData.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_RefreshData.Location = new Point(632, 436);
+            lb_RefreshData.Location = new Point(722, 581);
             lb_RefreshData.Name = "lb_RefreshData";
-            lb_RefreshData.Size = new Size(76, 21);
+            lb_RefreshData.Size = new Size(96, 28);
             lb_RefreshData.TabIndex = 59;
             lb_RefreshData.Text = "Get Data";
             lb_RefreshData.Click += lb_RefreshData_Click;
@@ -73,9 +73,9 @@
             lb_closeDashBoard.BackColor = Color.FromArgb(225, 241, 251);
             lb_closeDashBoard.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_closeDashBoard.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_closeDashBoard.Location = new Point(622, 615);
+            lb_closeDashBoard.Location = new Point(711, 820);
             lb_closeDashBoard.Name = "lb_closeDashBoard";
-            lb_closeDashBoard.Size = new Size(86, 21);
+            lb_closeDashBoard.Size = new Size(106, 28);
             lb_closeDashBoard.TabIndex = 58;
             lb_closeDashBoard.Text = "Close App";
             lb_closeDashBoard.Click += lb_closeDashBoard_Click;
@@ -86,10 +86,10 @@
             cb_Category.ForeColor = Color.FromArgb(50, 74, 133);
             cb_Category.FormattingEnabled = true;
             cb_Category.Items.AddRange(new object[] { "Admin", "User" });
-            cb_Category.Location = new Point(445, 584);
-            cb_Category.Margin = new Padding(4);
+            cb_Category.Location = new Point(509, 779);
+            cb_Category.Margin = new Padding(5);
             cb_Category.Name = "cb_Category";
-            cb_Category.Size = new Size(264, 23);
+            cb_Category.Size = new Size(301, 28);
             cb_Category.TabIndex = 57;
             // 
             // lb_Category
@@ -97,10 +97,10 @@
             lb_Category.AutoSize = true;
             lb_Category.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_Category.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_Category.Location = new Point(315, 586);
-            lb_Category.Margin = new Padding(4, 0, 4, 0);
+            lb_Category.Location = new Point(360, 781);
+            lb_Category.Margin = new Padding(5, 0, 5, 0);
             lb_Category.Name = "lb_Category";
-            lb_Category.Size = new Size(80, 21);
+            lb_Category.Size = new Size(98, 28);
             lb_Category.TabIndex = 56;
             lb_Category.Text = "Category";
             // 
@@ -109,10 +109,10 @@
             lb_ProductPrice.AutoSize = true;
             lb_ProductPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_ProductPrice.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_ProductPrice.Location = new Point(315, 542);
-            lb_ProductPrice.Margin = new Padding(4, 0, 4, 0);
+            lb_ProductPrice.Location = new Point(360, 723);
+            lb_ProductPrice.Margin = new Padding(5, 0, 5, 0);
             lb_ProductPrice.Name = "lb_ProductPrice";
-            lb_ProductPrice.Size = new Size(112, 21);
+            lb_ProductPrice.Size = new Size(139, 28);
             lb_ProductPrice.TabIndex = 48;
             lb_ProductPrice.Text = "Product Price";
             // 
@@ -120,10 +120,10 @@
             // 
             tb_ProductName.BackColor = Color.FromArgb(174, 195, 214);
             tb_ProductName.ForeColor = Color.FromArgb(50, 74, 133);
-            tb_ProductName.Location = new Point(444, 483);
-            tb_ProductName.Margin = new Padding(4);
+            tb_ProductName.Location = new Point(507, 644);
+            tb_ProductName.Margin = new Padding(5);
             tb_ProductName.Name = "tb_ProductName";
-            tb_ProductName.Size = new Size(265, 23);
+            tb_ProductName.Size = new Size(302, 27);
             tb_ProductName.TabIndex = 47;
             // 
             // lb_ProductName
@@ -131,10 +131,10 @@
             lb_ProductName.AutoSize = true;
             lb_ProductName.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_ProductName.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_ProductName.Location = new Point(315, 485);
-            lb_ProductName.Margin = new Padding(4, 0, 4, 0);
+            lb_ProductName.Location = new Point(360, 647);
+            lb_ProductName.Margin = new Padding(5, 0, 5, 0);
             lb_ProductName.Name = "lb_ProductName";
-            lb_ProductName.Size = new Size(120, 21);
+            lb_ProductName.Size = new Size(148, 28);
             lb_ProductName.TabIndex = 46;
             lb_ProductName.Text = "Product Name";
             // 
@@ -143,10 +143,10 @@
             btn_remove.BackColor = Color.FromArgb(174, 195, 214);
             btn_remove.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btn_remove.ForeColor = Color.FromArgb(12, 32, 84);
-            btn_remove.Location = new Point(155, 540);
-            btn_remove.Margin = new Padding(4);
+            btn_remove.Location = new Point(177, 720);
+            btn_remove.Margin = new Padding(5);
             btn_remove.Name = "btn_remove";
-            btn_remove.Size = new Size(134, 71);
+            btn_remove.Size = new Size(153, 95);
             btn_remove.TabIndex = 45;
             btn_remove.Text = "Remove";
             btn_remove.UseVisualStyleBackColor = false;
@@ -157,10 +157,10 @@
             btn_Edit.BackColor = Color.FromArgb(174, 195, 214);
             btn_Edit.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btn_Edit.ForeColor = Color.FromArgb(12, 32, 84);
-            btn_Edit.Location = new Point(155, 460);
-            btn_Edit.Margin = new Padding(4);
+            btn_Edit.Location = new Point(177, 613);
+            btn_Edit.Margin = new Padding(5);
             btn_Edit.Name = "btn_Edit";
-            btn_Edit.Size = new Size(134, 71);
+            btn_Edit.Size = new Size(153, 95);
             btn_Edit.TabIndex = 44;
             btn_Edit.Text = "Edit";
             btn_Edit.UseVisualStyleBackColor = false;
@@ -171,10 +171,10 @@
             btn_Add.BackColor = Color.FromArgb(174, 195, 214);
             btn_Add.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btn_Add.ForeColor = Color.FromArgb(12, 32, 84);
-            btn_Add.Location = new Point(13, 492);
-            btn_Add.Margin = new Padding(4);
+            btn_Add.Location = new Point(15, 656);
+            btn_Add.Margin = new Padding(5);
             btn_Add.Name = "btn_Add";
-            btn_Add.Size = new Size(134, 71);
+            btn_Add.Size = new Size(153, 95);
             btn_Add.TabIndex = 43;
             btn_Add.Text = "Add";
             btn_Add.UseVisualStyleBackColor = false;
@@ -185,10 +185,10 @@
             lb_Operations.AutoSize = true;
             lb_Operations.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_Operations.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_Operations.Location = new Point(13, 427);
-            lb_Operations.Margin = new Padding(4, 0, 4, 0);
+            lb_Operations.Location = new Point(15, 569);
+            lb_Operations.Margin = new Padding(5, 0, 5, 0);
             lb_Operations.Name = "lb_Operations";
-            lb_Operations.Size = new Size(94, 21);
+            lb_Operations.Size = new Size(116, 28);
             lb_Operations.TabIndex = 42;
             lb_Operations.Text = "Operations";
             // 
@@ -197,10 +197,10 @@
             productBtn.BackColor = Color.White;
             productBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             productBtn.ForeColor = Color.FromArgb(12, 32, 84);
-            productBtn.Location = new Point(13, 319);
-            productBtn.Margin = new Padding(4);
+            productBtn.Location = new Point(15, 425);
+            productBtn.Margin = new Padding(5);
             productBtn.Name = "productBtn";
-            productBtn.Size = new Size(209, 71);
+            productBtn.Size = new Size(239, 95);
             productBtn.TabIndex = 41;
             productBtn.Text = "Prodcuts";
             productBtn.UseVisualStyleBackColor = false;
@@ -210,10 +210,10 @@
             CategoryBtn.BackColor = Color.FromArgb(174, 195, 214);
             CategoryBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             CategoryBtn.ForeColor = Color.FromArgb(12, 32, 84);
-            CategoryBtn.Location = new Point(13, 222);
-            CategoryBtn.Margin = new Padding(4);
+            CategoryBtn.Location = new Point(15, 296);
+            CategoryBtn.Margin = new Padding(5);
             CategoryBtn.Name = "CategoryBtn";
-            CategoryBtn.Size = new Size(209, 71);
+            CategoryBtn.Size = new Size(239, 95);
             CategoryBtn.TabIndex = 40;
             CategoryBtn.Text = "Category ";
             CategoryBtn.UseVisualStyleBackColor = false;
@@ -224,10 +224,10 @@
             UserBtn.BackColor = Color.FromArgb(174, 195, 214);
             UserBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             UserBtn.ForeColor = Color.FromArgb(12, 32, 84);
-            UserBtn.Location = new Point(13, 123);
-            UserBtn.Margin = new Padding(4);
+            UserBtn.Location = new Point(15, 164);
+            UserBtn.Margin = new Padding(5);
             UserBtn.Name = "UserBtn";
-            UserBtn.Size = new Size(209, 71);
+            UserBtn.Size = new Size(239, 95);
             UserBtn.TabIndex = 39;
             UserBtn.Text = "User";
             UserBtn.UseVisualStyleBackColor = false;
@@ -238,20 +238,21 @@
             dgv_ProductAdmin.BackgroundColor = Color.FromArgb(217, 217, 217);
             dgv_ProductAdmin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_ProductAdmin.GridColor = Color.Silver;
-            dgv_ProductAdmin.Location = new Point(315, 123);
-            dgv_ProductAdmin.Margin = new Padding(4);
+            dgv_ProductAdmin.Location = new Point(360, 164);
+            dgv_ProductAdmin.Margin = new Padding(5);
             dgv_ProductAdmin.Name = "dgv_ProductAdmin";
-            dgv_ProductAdmin.Size = new Size(394, 293);
+            dgv_ProductAdmin.RowHeadersWidth = 51;
+            dgv_ProductAdmin.Size = new Size(551, 391);
             dgv_ProductAdmin.TabIndex = 38;
             dgv_ProductAdmin.CellContentDoubleClick += dgv_ProductAdmin_CellContentDoubleClick_1;
             // 
             // pb_logOut
             // 
             pb_logOut.Image = (Image)resources.GetObject("pb_logOut.Image");
-            pb_logOut.Location = new Point(632, 21);
-            pb_logOut.Margin = new Padding(4);
+            pb_logOut.Location = new Point(748, 28);
+            pb_logOut.Margin = new Padding(5);
             pb_logOut.Name = "pb_logOut";
-            pb_logOut.Size = new Size(143, 70);
+            pb_logOut.Size = new Size(163, 93);
             pb_logOut.SizeMode = PictureBoxSizeMode.Zoom;
             pb_logOut.TabIndex = 37;
             pb_logOut.TabStop = false;
@@ -262,20 +263,20 @@
             lb_AdminProductDashboard.AutoSize = true;
             lb_AdminProductDashboard.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             lb_AdminProductDashboard.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_AdminProductDashboard.Location = new Point(149, 24);
-            lb_AdminProductDashboard.Margin = new Padding(4, 0, 4, 0);
+            lb_AdminProductDashboard.Location = new Point(170, 32);
+            lb_AdminProductDashboard.Margin = new Padding(5, 0, 5, 0);
             lb_AdminProductDashboard.Name = "lb_AdminProductDashboard";
-            lb_AdminProductDashboard.Size = new Size(446, 46);
+            lb_AdminProductDashboard.Size = new Size(552, 57);
             lb_AdminProductDashboard.TabIndex = 36;
             lb_AdminProductDashboard.Text = "Admin Product DashBoard";
             // 
             // profileLinkBtn
             // 
             profileLinkBtn.Image = (Image)resources.GetObject("profileLinkBtn.Image");
-            profileLinkBtn.Location = new Point(13, 21);
-            profileLinkBtn.Margin = new Padding(4);
+            profileLinkBtn.Location = new Point(15, 28);
+            profileLinkBtn.Margin = new Padding(5);
             profileLinkBtn.Name = "profileLinkBtn";
-            profileLinkBtn.Size = new Size(103, 67);
+            profileLinkBtn.Size = new Size(118, 89);
             profileLinkBtn.SizeMode = PictureBoxSizeMode.Zoom;
             profileLinkBtn.TabIndex = 35;
             profileLinkBtn.TabStop = false;
@@ -285,18 +286,19 @@
             // 
             tb_numbericPrice.BackColor = Color.FromArgb(174, 195, 214);
             tb_numbericPrice.ForeColor = Color.FromArgb(50, 74, 133);
-            tb_numbericPrice.Location = new Point(445, 540);
+            tb_numbericPrice.Location = new Point(509, 720);
+            tb_numbericPrice.Margin = new Padding(3, 4, 3, 4);
             tb_numbericPrice.Maximum = new decimal(new int[] { 6000000, 0, 0, 0 });
             tb_numbericPrice.Name = "tb_numbericPrice";
-            tb_numbericPrice.Size = new Size(263, 23);
+            tb_numbericPrice.Size = new Size(301, 27);
             tb_numbericPrice.TabIndex = 60;
             // 
             // ProductsAdminDashBoard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 241, 250);
-            ClientSize = new Size(799, 724);
+            ClientSize = new Size(950, 965);
             ControlBox = false;
             Controls.Add(tb_numbericPrice);
             Controls.Add(lb_RefreshData);
@@ -318,6 +320,7 @@
             Controls.Add(lb_AdminProductDashboard);
             Controls.Add(profileLinkBtn);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ProductsAdminDashBoard";
             Text = "ProductsAdminDashBoard";
             Load += ProductsAdminDashBoard_Load;

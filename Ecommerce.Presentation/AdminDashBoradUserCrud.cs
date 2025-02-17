@@ -35,15 +35,18 @@ namespace Ecommerce.Presentation
         private void AdminDashBoradUserCrud_Load(object sender, EventArgs e)
         {
             GetData();
-
-        }
+       }
         private void GetData()
         {
             DataTable dt = user.GetAllUser();
             dgv_userAdmin.DataSource = dt;
+            dgv_userAdmin.Columns["Password"].Visible = false;
+            dgv_userAdmin.Columns["UserId"].Visible = false;
             btn_Edit.Hide();
             btn_remove.Hide();
             btn_Add.Show();
+            lb_pssword.Visible = true;
+            tb_password.Visible = true;
         }
 
         private void pb_logOut_Click(object sender, EventArgs e)
@@ -92,14 +95,23 @@ namespace Ecommerce.Presentation
             btn_Edit.Show();
             btn_remove.Show();
             btn_Add.Hide();
-            DataGridViewRow row = dgv_userAdmin.SelectedRows[0];
-            tb_UserName.Text = row.Cells["UserName"].Value?.ToString() ?? "";
-            tb_Email.Text = row.Cells["Email"].Value?.ToString() ?? "";
-            tb_password.Text = row.Cells["Password"].Value?.ToString() ?? "";
-            tb_numbricAge.Text = row.Cells["Age"].Value?.ToString() ?? "0";
-            tb_Address.Text = row.Cells["Address"].Value?.ToString() ?? "";
-            cb_role.SelectedItem = row.Cells["Role"].Value?.ToString() ?? "";
-            selectedUserItem = (int)row.Cells["UserId"].Value;
+            lb_pssword.Visible = false;
+            tb_password.Visible = false; 
+            if (dgv_userAdmin.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dgv_userAdmin.SelectedRows[0];
+                tb_UserName.Text = row.Cells["UserName"].Value?.ToString()?.Trim() ?? "";
+                tb_Email.Text = row.Cells["Email"].Value?.ToString()?.Trim() ?? "";
+                tb_numbricAge.Value = Convert.ToInt32(row.Cells["Age"].Value ?? 0);
+                tb_Address.Text = row.Cells["Address"].Value?.ToString()?.Trim() ?? "";
+                string roleValue = row.Cells["Role"].Value?.ToString()?.Trim();
+                int roleIndex = cb_role.FindStringExact(roleValue);
+                if (roleIndex != -1)
+                {
+                    cb_role.SelectedIndex = roleIndex;
+                }
+                selectedUserItem = Convert.ToInt32(row.Cells["UserId"].Value);
+            }
         }
 
         private void btn_remove_Click(object sender, EventArgs e)
@@ -115,7 +127,6 @@ namespace Ecommerce.Presentation
                 MessageBox.Show("Failed to Delete user");
             }
         }
-
         private void lb_RefreshData_Click(object sender, EventArgs e)
         {
             GetData();
