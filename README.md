@@ -25,8 +25,8 @@ During my journey at **Information Technology Institute (ITI),** I developed thi
 2. Set up the SQL Server database and update the connection string  
 3. Open the project in Visual Studio  
 4. Run the application 🚀  
-###Screen Record
+
+###  Screen Record 
 https://github.com/user-attachments/assets/de89b734-fc09-4605-92fd-819e685a9098
-
-
 ### 📩 Feel free to contribute and share feedback!  
+
