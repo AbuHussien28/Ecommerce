@@ -16,7 +16,6 @@ namespace Ecommerce.DataAceess
         {
             con = new SqlConnection(connection);
         }
-        //==> Select using Disconnected Mode 
         public DataTable ExecuteQuery(string cmd) 
         {
             SqlCommand command = new SqlCommand(cmd, con);
@@ -25,7 +24,6 @@ namespace Ecommerce.DataAceess
             adapter.Fill(dt);
             return dt;
         }
-        //Insert, update,Delete => connected Mode
         public int ExecuteNonQuery(string cmd) 
         {
             SqlCommand command = new SqlCommand(cmd, con);

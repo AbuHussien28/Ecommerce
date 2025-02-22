@@ -401,6 +401,7 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4);
             Name = "AdminDashBoradUserCrud";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AdminDashBoradUserCrud";
             Load += AdminDashBoradUserCrud_Load;
             ((System.ComponentModel.ISupportInitialize)profileLinkBtn).EndInit();
