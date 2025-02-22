@@ -92,7 +92,7 @@
             lb_AdminUserDashboard.Location = new Point(153, 20);
             lb_AdminUserDashboard.Margin = new Padding(4, 0, 4, 0);
             lb_AdminUserDashboard.Name = "lb_AdminUserDashboard";
-            lb_AdminUserDashboard.Size = new Size(484, 57);
+            lb_AdminUserDashboard.Size = new Size(391, 46);
             lb_AdminUserDashboard.TabIndex = 10;
             lb_AdminUserDashboard.Text = "Admin User DashBoard";
             // 
@@ -105,7 +105,7 @@
             dgv_userAdmin.Margin = new Padding(4);
             dgv_userAdmin.Name = "dgv_userAdmin";
             dgv_userAdmin.RowHeadersWidth = 51;
-            dgv_userAdmin.Size = new Size(712, 293);
+            dgv_userAdmin.Size = new Size(637, 293);
             dgv_userAdmin.TabIndex = 12;
             dgv_userAdmin.CellMouseDoubleClick += dgv_userAdmin_CellMouseDoubleClick;
             // 
@@ -158,7 +158,7 @@
             lb_Operations.Location = new Point(17, 423);
             lb_Operations.Margin = new Padding(4, 0, 4, 0);
             lb_Operations.Name = "lb_Operations";
-            lb_Operations.Size = new Size(116, 28);
+            lb_Operations.Size = new Size(94, 21);
             lb_Operations.TabIndex = 16;
             lb_Operations.Text = "Operations";
             // 
@@ -212,7 +212,7 @@
             lb_userName.Location = new Point(410, 434);
             lb_userName.Margin = new Padding(4, 0, 4, 0);
             lb_userName.Name = "lb_userName";
-            lb_userName.Size = new Size(110, 28);
+            lb_userName.Size = new Size(90, 21);
             lb_userName.TabIndex = 21;
             lb_userName.Text = "UserName";
             // 
@@ -223,7 +223,7 @@
             tb_UserName.Location = new Point(539, 423);
             tb_UserName.Margin = new Padding(4);
             tb_UserName.Name = "tb_UserName";
-            tb_UserName.Size = new Size(265, 34);
+            tb_UserName.Size = new Size(265, 29);
             tb_UserName.TabIndex = 22;
             // 
             // tb_Email
@@ -233,7 +233,7 @@
             tb_Email.Location = new Point(539, 520);
             tb_Email.Margin = new Padding(4);
             tb_Email.Name = "tb_Email";
-            tb_Email.Size = new Size(265, 34);
+            tb_Email.Size = new Size(265, 29);
             tb_Email.TabIndex = 26;
             // 
             // lb_Email
@@ -244,7 +244,7 @@
             lb_Email.Location = new Point(410, 531);
             lb_Email.Margin = new Padding(4, 0, 4, 0);
             lb_Email.Name = "lb_Email";
-            lb_Email.Size = new Size(72, 28);
+            lb_Email.Size = new Size(59, 21);
             lb_Email.TabIndex = 25;
             lb_Email.Text = "E-mail";
             // 
@@ -256,7 +256,7 @@
             lb_age.Location = new Point(410, 588);
             lb_age.Margin = new Padding(4, 0, 4, 0);
             lb_age.Name = "lb_age";
-            lb_age.Size = new Size(49, 28);
+            lb_age.Size = new Size(40, 21);
             lb_age.TabIndex = 27;
             lb_age.Text = "Age";
             // 
@@ -267,7 +267,7 @@
             tb_numbricAge.Location = new Point(539, 577);
             tb_numbricAge.Margin = new Padding(4);
             tb_numbricAge.Name = "tb_numbricAge";
-            tb_numbricAge.Size = new Size(267, 34);
+            tb_numbricAge.Size = new Size(267, 29);
             tb_numbricAge.TabIndex = 28;
             // 
             // tb_Address
@@ -277,7 +277,7 @@
             tb_Address.Location = new Point(539, 625);
             tb_Address.Margin = new Padding(4);
             tb_Address.Name = "tb_Address";
-            tb_Address.Size = new Size(265, 34);
+            tb_Address.Size = new Size(265, 29);
             tb_Address.TabIndex = 30;
             // 
             // lb_Address
@@ -288,7 +288,7 @@
             lb_Address.Location = new Point(410, 636);
             lb_Address.Margin = new Padding(4, 0, 4, 0);
             lb_Address.Name = "lb_Address";
-            lb_Address.Size = new Size(87, 28);
+            lb_Address.Size = new Size(70, 21);
             lb_Address.TabIndex = 29;
             lb_Address.Text = "Address";
             // 
@@ -300,7 +300,7 @@
             lb_Role.Location = new Point(410, 690);
             lb_Role.Margin = new Padding(4, 0, 4, 0);
             lb_Role.Name = "lb_Role";
-            lb_Role.Size = new Size(54, 28);
+            lb_Role.Size = new Size(44, 21);
             lb_Role.TabIndex = 31;
             lb_Role.Text = "Role";
             // 
@@ -313,7 +313,7 @@
             cb_role.Location = new Point(539, 679);
             cb_role.Margin = new Padding(4);
             cb_role.Name = "cb_role";
-            cb_role.Size = new Size(264, 36);
+            cb_role.Size = new Size(264, 29);
             cb_role.TabIndex = 32;
             // 
             // lb_closeDashBoard
@@ -322,9 +322,9 @@
             lb_closeDashBoard.BackColor = Color.FromArgb(225, 241, 251);
             lb_closeDashBoard.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_closeDashBoard.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_closeDashBoard.Location = new Point(999, 681);
+            lb_closeDashBoard.Location = new Point(956, 682);
             lb_closeDashBoard.Name = "lb_closeDashBoard";
-            lb_closeDashBoard.Size = new Size(106, 28);
+            lb_closeDashBoard.Size = new Size(86, 21);
             lb_closeDashBoard.TabIndex = 33;
             lb_closeDashBoard.Text = "Close App";
             lb_closeDashBoard.Click += lb_closeDashBoard_Click;
@@ -335,9 +335,9 @@
             lb_RefreshData.BackColor = Color.FromArgb(225, 241, 251);
             lb_RefreshData.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lb_RefreshData.ForeColor = Color.FromArgb(50, 74, 133);
-            lb_RefreshData.Location = new Point(1009, 437);
+            lb_RefreshData.Location = new Point(966, 431);
             lb_RefreshData.Name = "lb_RefreshData";
-            lb_RefreshData.Size = new Size(96, 28);
+            lb_RefreshData.Size = new Size(76, 21);
             lb_RefreshData.TabIndex = 34;
             lb_RefreshData.Text = "Get Data";
             lb_RefreshData.Click += lb_RefreshData_Click;
@@ -349,7 +349,7 @@
             tb_password.Location = new Point(538, 471);
             tb_password.Margin = new Padding(4);
             tb_password.Name = "tb_password";
-            tb_password.Size = new Size(265, 34);
+            tb_password.Size = new Size(265, 29);
             tb_password.TabIndex = 36;
             tb_password.UseSystemPasswordChar = true;
             // 
@@ -361,16 +361,16 @@
             lb_pssword.Location = new Point(409, 482);
             lb_pssword.Margin = new Padding(4, 0, 4, 0);
             lb_pssword.Name = "lb_pssword";
-            lb_pssword.Size = new Size(101, 28);
+            lb_pssword.Size = new Size(82, 21);
             lb_pssword.TabIndex = 35;
             lb_pssword.Text = "Password";
             // 
             // AdminDashBoradUserCrud
             // 
-            AutoScaleDimensions = new SizeF(12F, 28F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 241, 250);
-            ClientSize = new Size(1130, 732);
+            ClientSize = new Size(1144, 758);
             ControlBox = false;
             Controls.Add(tb_password);
             Controls.Add(lb_pssword);
