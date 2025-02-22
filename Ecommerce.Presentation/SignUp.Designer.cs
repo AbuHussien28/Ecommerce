@@ -328,6 +328,7 @@
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "SignUp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SignUp";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numberic_Age).EndInit();

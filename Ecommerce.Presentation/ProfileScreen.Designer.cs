@@ -47,6 +47,15 @@
             panelEditProfile = new Panel();
             label11 = new Label();
             label12 = new Label();
+            label13 = new Label();
+            tb_numbericAge = new NumericUpDown();
+            lb_saveEditProfile = new Label();
+            tb_Email = new TextBox();
+            tb_UserName = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             panelChangePassword = new Panel();
             ChB_ShowConfirmPassword = new CheckBox();
             ChB_ShowNewPassword = new CheckBox();
@@ -62,22 +71,13 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            label13 = new Label();
-            tb_numbericAge = new NumericUpDown();
-            lb_saveEditProfile = new Label();
-            tb_Email = new TextBox();
-            tb_UserName = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             lb_back = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelShowData.SuspendLayout();
             panelEditProfile.SuspendLayout();
-            panelChangePassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)tb_numbericAge).BeginInit();
+            panelChangePassword.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -287,6 +287,100 @@
             label12.TabIndex = 30;
             label12.Text = "Email :";
             // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI Black", 15F);
+            label13.ForeColor = Color.FromArgb(54, 75, 99);
+            label13.Location = new Point(32, 11);
+            label13.Name = "label13";
+            label13.Size = new Size(126, 28);
+            label13.TabIndex = 29;
+            label13.Text = "UserName :";
+            // 
+            // tb_numbericAge
+            // 
+            tb_numbericAge.BackColor = Color.FromArgb(189, 204, 218);
+            tb_numbericAge.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            tb_numbericAge.ForeColor = Color.FromArgb(54, 75, 99);
+            tb_numbericAge.Location = new Point(195, 110);
+            tb_numbericAge.Name = "tb_numbericAge";
+            tb_numbericAge.Size = new Size(222, 29);
+            tb_numbericAge.TabIndex = 24;
+            // 
+            // lb_saveEditProfile
+            // 
+            lb_saveEditProfile.AutoSize = true;
+            lb_saveEditProfile.BackColor = Color.FromArgb(219, 225, 227);
+            lb_saveEditProfile.Font = new Font("ae_Shado", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb_saveEditProfile.ForeColor = Color.FromArgb(54, 75, 99);
+            lb_saveEditProfile.Location = new Point(173, 168);
+            lb_saveEditProfile.Name = "lb_saveEditProfile";
+            lb_saveEditProfile.Size = new Size(53, 23);
+            lb_saveEditProfile.TabIndex = 28;
+            lb_saveEditProfile.Text = "Save";
+            lb_saveEditProfile.Click += lb_saveEditProfile_Click;
+            // 
+            // tb_Email
+            // 
+            tb_Email.BackColor = Color.FromArgb(189, 204, 218);
+            tb_Email.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            tb_Email.ForeColor = Color.FromArgb(54, 75, 99);
+            tb_Email.Location = new Point(195, 56);
+            tb_Email.Name = "tb_Email";
+            tb_Email.Size = new Size(222, 29);
+            tb_Email.TabIndex = 21;
+            // 
+            // tb_UserName
+            // 
+            tb_UserName.BackColor = Color.FromArgb(189, 204, 218);
+            tb_UserName.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            tb_UserName.ForeColor = Color.FromArgb(54, 75, 99);
+            tb_UserName.Location = new Point(195, 9);
+            tb_UserName.Name = "tb_UserName";
+            tb_UserName.Size = new Size(222, 29);
+            tb_UserName.TabIndex = 20;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Black", 12F);
+            label1.ForeColor = Color.FromArgb(54, 75, 99);
+            label1.Location = new Point(20, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 21);
+            label1.TabIndex = 13;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Black", 12F);
+            label2.ForeColor = Color.FromArgb(54, 75, 99);
+            label2.Location = new Point(20, 64);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 21);
+            label2.TabIndex = 15;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Black", 12F);
+            label3.ForeColor = Color.FromArgb(54, 75, 99);
+            label3.Location = new Point(20, 118);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 21);
+            label3.TabIndex = 17;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Black", 12F);
+            label4.ForeColor = Color.FromArgb(54, 75, 99);
+            label4.Location = new Point(20, 166);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 21);
+            label4.TabIndex = 19;
+            // 
             // panelChangePassword
             // 
             panelChangePassword.Controls.Add(ChB_ShowConfirmPassword);
@@ -461,100 +555,6 @@
             label9.Size = new Size(0, 21);
             label9.TabIndex = 19;
             // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Black", 15F);
-            label13.ForeColor = Color.FromArgb(54, 75, 99);
-            label13.Location = new Point(32, 11);
-            label13.Name = "label13";
-            label13.Size = new Size(126, 28);
-            label13.TabIndex = 29;
-            label13.Text = "UserName :";
-            // 
-            // tb_numbericAge
-            // 
-            tb_numbericAge.BackColor = Color.FromArgb(189, 204, 218);
-            tb_numbericAge.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            tb_numbericAge.ForeColor = Color.FromArgb(54, 75, 99);
-            tb_numbericAge.Location = new Point(195, 110);
-            tb_numbericAge.Name = "tb_numbericAge";
-            tb_numbericAge.Size = new Size(222, 29);
-            tb_numbericAge.TabIndex = 24;
-            // 
-            // lb_saveEditProfile
-            // 
-            lb_saveEditProfile.AutoSize = true;
-            lb_saveEditProfile.BackColor = Color.FromArgb(219, 225, 227);
-            lb_saveEditProfile.Font = new Font("ae_Shado", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_saveEditProfile.ForeColor = Color.FromArgb(54, 75, 99);
-            lb_saveEditProfile.Location = new Point(173, 168);
-            lb_saveEditProfile.Name = "lb_saveEditProfile";
-            lb_saveEditProfile.Size = new Size(53, 23);
-            lb_saveEditProfile.TabIndex = 28;
-            lb_saveEditProfile.Text = "Save";
-            lb_saveEditProfile.Click += lb_saveEditProfile_Click;
-            // 
-            // tb_Email
-            // 
-            tb_Email.BackColor = Color.FromArgb(189, 204, 218);
-            tb_Email.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            tb_Email.ForeColor = Color.FromArgb(54, 75, 99);
-            tb_Email.Location = new Point(195, 56);
-            tb_Email.Name = "tb_Email";
-            tb_Email.Size = new Size(222, 29);
-            tb_Email.TabIndex = 21;
-            // 
-            // tb_UserName
-            // 
-            tb_UserName.BackColor = Color.FromArgb(189, 204, 218);
-            tb_UserName.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            tb_UserName.ForeColor = Color.FromArgb(54, 75, 99);
-            tb_UserName.Location = new Point(195, 9);
-            tb_UserName.Name = "tb_UserName";
-            tb_UserName.Size = new Size(222, 29);
-            tb_UserName.TabIndex = 20;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Black", 12F);
-            label1.ForeColor = Color.FromArgb(54, 75, 99);
-            label1.Location = new Point(20, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 21);
-            label1.TabIndex = 13;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Black", 12F);
-            label2.ForeColor = Color.FromArgb(54, 75, 99);
-            label2.Location = new Point(20, 64);
-            label2.Name = "label2";
-            label2.Size = new Size(0, 21);
-            label2.TabIndex = 15;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Black", 12F);
-            label3.ForeColor = Color.FromArgb(54, 75, 99);
-            label3.Location = new Point(20, 118);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 21);
-            label3.TabIndex = 17;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Black", 12F);
-            label4.ForeColor = Color.FromArgb(54, 75, 99);
-            label4.Location = new Point(20, 166);
-            label4.Name = "label4";
-            label4.Size = new Size(0, 21);
-            label4.TabIndex = 19;
-            // 
             // lb_back
             // 
             lb_back.AutoSize = true;
@@ -591,6 +591,7 @@
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "ProfileScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ProfileScreen";
             Load += ProfileScreen_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -599,9 +600,9 @@
             panelShowData.PerformLayout();
             panelEditProfile.ResumeLayout(false);
             panelEditProfile.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)tb_numbericAge).EndInit();
             panelChangePassword.ResumeLayout(false);
             panelChangePassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)tb_numbericAge).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

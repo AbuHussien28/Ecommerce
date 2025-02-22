@@ -63,16 +63,6 @@ namespace Ecommerce.Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5272 {
-            get {
-                object obj = ResourceManager.GetObject("5272", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Login_Icon {
             get {
                 object obj = ResourceManager.GetObject("Login_Icon", resourceCulture);
